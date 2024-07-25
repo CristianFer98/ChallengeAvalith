@@ -1,0 +1,16 @@
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\bin\Debug\netcoreapp3.1\ParkingRepository.deps.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\bin\Debug\netcoreapp3.1\ParkingRepository.runtimeconfig.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\bin\Debug\netcoreapp3.1\ParkingRepository.runtimeconfig.dev.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\bin\Debug\netcoreapp3.1\ParkingRepository.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\bin\Debug\netcoreapp3.1\ParkingRepository.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\bin\Debug\netcoreapp3.1\ParkingModels.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\bin\Debug\netcoreapp3.1\ParkingModels.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.csproj.AssemblyReference.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.AssemblyInfoInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.AssemblyInfo.cs
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.csproj.CoreCompileInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingR.55BAB10A.Up2Date
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingRepository\obj\Debug\netcoreapp3.1\ParkingRepository.genruntimeconfig.cache

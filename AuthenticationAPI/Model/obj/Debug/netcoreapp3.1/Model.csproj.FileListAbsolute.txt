@@ -7,3 +7,12 @@ C:\Users\AVALITH1\Desktop\Trabajo\Challenge\POCAuthentication\Model\obj\Debug\ne
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\POCAuthentication\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\POCAuthentication\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\POCAuthentication\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\obj\Debug\netcoreapp3.1\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\AuthenticationAPI\Model\obj\Debug\netcoreapp3.1\Model.pdb

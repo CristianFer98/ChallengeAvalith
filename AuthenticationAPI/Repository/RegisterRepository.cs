@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Model;
 using Repository.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Repository
 {
+    /// <summary>
+    /// Registra un usuario en la base de datos. 
+    /// </summary>
     public class RegisterRepository : IRegisterRepository
     {
         private readonly MyDbContext _dbcontext;

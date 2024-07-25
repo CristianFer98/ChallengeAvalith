@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Model;
 using Service.interfaces;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
-namespace GatewayAuthentication.Controllers
+
+namespace AuthenticationAPI.Controllers
 {
+    /// <summary>
+    /// Servicio encargado de registrar nuevos usuarios y crear Token de acceso para las aplicaciones
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class AuthenticationController : ControllerBase
@@ -25,17 +26,24 @@ namespace GatewayAuthentication.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] RegisterData newUser)
         {
-
-            bool register = _registerService.Register(newUser);
-
-            if (register)
+            try
             {
-                return Ok("Usuario registrado con exito.");
+                bool register = _registerService.Register(newUser);
+
+                if (register)
+                {
+                    return Ok("Usuario registrado con exito.");
+                }
+                else
+                {
+                    return Conflict("Usuario Existente");
+                }
             }
-            else
+            catch (Exception)
             {
-                return BadRequest("Usuario existente");
+                return BadRequest("Ha ocurrido un error");
             }
+           
         }
 
         [HttpPost("login")]

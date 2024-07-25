@@ -1,10 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Model;
 using Repository.Data;
 using Service.interfaces;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -22,29 +20,36 @@ namespace Service.helper
 
         public string GenerateToken(Usuarios user)
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_jwtSettings.SecretKey);
-
-            var claims = new[]
+            try
             {
-            new Claim("Name", user.Name),
-            new Claim("Email", user.Email),
-            new Claim("Id", user.Id.ToString()),
-            new Claim("Dni", user.Dni)
-            };
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var key = Encoding.ASCII.GetBytes(_jwtSettings.SecretKey);
 
+                var claims = new[]
+                {
+                new Claim("Name", user.Name),
+                new Claim("Email", user.Email),
+                new Claim("Id", user.Id.ToString()),
+                new Claim("Dni", user.Dni)
+                };
 
-            var tokenDescriptor = new SecurityTokenDescriptor
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(claims),
+                    Expires = DateTime.UtcNow.AddHours(0.5),
+                    Issuer = _jwtSettings.Issuer,
+                    Audience = _jwtSettings.Audience,
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                };
+
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+                return tokenHandler.WriteToken(token);
+            }
+            catch (Exception ex)
             {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.UtcNow.AddHours(0.5),
-                Issuer = _jwtSettings.Issuer,
-                Audience = _jwtSettings.Audience,
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
+                throw ex;
+            }
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
         }
     }
 }

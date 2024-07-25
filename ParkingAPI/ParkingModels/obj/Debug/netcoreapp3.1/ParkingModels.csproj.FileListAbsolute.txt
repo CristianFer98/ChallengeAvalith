@@ -1,0 +1,13 @@
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\bin\Debug\netcoreapp3.1\ParkingModels.deps.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\bin\Debug\netcoreapp3.1\ParkingModels.runtimeconfig.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\bin\Debug\netcoreapp3.1\ParkingModels.runtimeconfig.dev.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\bin\Debug\netcoreapp3.1\ParkingModels.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\bin\Debug\netcoreapp3.1\ParkingModels.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.csproj.AssemblyReference.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.AssemblyInfoInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.AssemblyInfo.cs
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.csproj.CoreCompileInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingModels\obj\Debug\netcoreapp3.1\ParkingModels.genruntimeconfig.cache

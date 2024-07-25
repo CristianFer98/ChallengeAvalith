@@ -1,0 +1,63 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# User preferences
+.vscode
+.idea
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Oo]ut/
+[Ll]ogFiles/
+
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# Include client-side libraries downloaded by npm, bower, or other package managers
+node_modules/
+bower_components/
+
+# Enable "dotnet pack" to work without having to ignore temporary build results.
+*.nuget.props
+*.nuget.targets
+
+# Uncomment if you have code coverage results.
+# Reports/
+
+# Include database folders for local db serverless options.
+*.mdf
+*.ldf
+
+# Uncomment if you have a Visual Studio Code workspace settings folder.
+#.vscode/
+
+# Uncomment if you have a JetBrains Rider workspace settings folder.
+#.idea/
+
+# OS-specific files
+[Tt]humbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Folder config file
+.vs/
+.vscode/

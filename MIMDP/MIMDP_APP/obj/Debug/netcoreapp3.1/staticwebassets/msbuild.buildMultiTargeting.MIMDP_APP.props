@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MIMDP_APP.props" />
+</Project>

@@ -21,25 +21,24 @@ namespace Service
         {
             try
             {
-                Usuarios userCompare = _loginRepository.GetUserByEmail(user.Email);
+                Usuarios userToCompare = _loginRepository.GetUserByEmail(user.Email);
 
-                if (userCompare != null)
+                if (userToCompare != null)
                 {
-                    bool passwordCompare = EncryptionService.GetInstance().VerifyPassword(userCompare.Contraseña, user.Password);
+                    bool passwordCompare = EncryptionService.GetInstance().VerifyPassword(userToCompare.Contraseña, user.Password);
 
                     if (passwordCompare)
                     {
-                        string Jwt = _jwtTokenGenerator.GenerateToken(userCompare);
+                        string Jwt = _jwtTokenGenerator.GenerateToken(userToCompare);
                         return Jwt;
                     }
 
                 }
                 return string.Empty;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw ex;
             }
             
         }

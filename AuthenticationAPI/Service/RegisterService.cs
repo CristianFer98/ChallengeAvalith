@@ -16,8 +16,16 @@ namespace Service
         }
         public bool Register(RegisterData user)
         {
-            user.Password = EncryptionService.GetInstance().HashPassword(user.Password);
-            return _registerRepository.Register(user);
+            try
+            {
+                user.Password = EncryptionService.GetInstance().HashPassword(user.Password);
+                return _registerRepository.Register(user);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
     }
 }
