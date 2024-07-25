@@ -1,0 +1,9 @@
+  create database POC
+
+  CREATE TABLE Usuarios
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Email NVARCHAR(256) UNIQUE NOT NULL,
+    Contraseña NVARCHAR(256) NOT NULL,
+    DNI CHAR(8) NOT NULL
+);

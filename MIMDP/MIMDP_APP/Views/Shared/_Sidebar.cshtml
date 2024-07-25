@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    .sidebar {
+        width: 20%;
+        padding-left: 5px;
+        background-color: #314161;
+        color: white;
+        height: 750px;
+    }
+
+        .sidebar > nav {
+            width: 100%;
+        }
+
+</style>
+
+<div class="sidebar">
+    <h5 class="sidebar-header">Menu</h5>
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link text-white" asp-controller="Parking" asp-action="Index">Estacionamiento Medido</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Licencia de conducir</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Ventanilla única de tramites</a>
+        </li>
+    </ul>
+
+</div>
