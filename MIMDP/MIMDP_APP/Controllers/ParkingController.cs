@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MIMDP_APP.Models.Parking.Requests;
+using MIMDP_APP.Models.Parking.Response;
+using MIMDP_APP.Models.Parking.ViewModels;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
@@ -42,11 +44,47 @@ namespace MyAppMVC.Controllers
             }
 
             var response = await _httpClient.PostAsync("https://localhost:44331/parking/info", content);
-            var jsonString = await response.Content.ReadAsStringAsync();
 
-            var parkingInfo = JsonConvert.DeserializeObject<ParkingInfoResponse>(jsonString);
-            TempData["UserName"] = User.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
-            return View(parkingInfo);
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var parkingInfo = JsonConvert.DeserializeObject<ParkingInfoResponse>(jsonString);
+                ParkingInfoViewModel parkingInfoViewModel = new ParkingInfoViewModel();
+                parkingInfoViewModel.ParkingInfoResponse = parkingInfo;
+                parkingInfoViewModel.NewParkingRequest = new NewParkingRequest();
+
+                TempData["UserName"] = User.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
+
+                return View(parkingInfoViewModel);
+            }
+            TempData["Message"] = "El usuario no tiene cuenta en el portal";
+            return RedirectToAction("Index", "Home");
         }
+
+        [Authorize]
+        public async Task<IActionResult> NewParking(NewParkingRequest newParkingRequest)
+        {
+            if (ModelState.IsValid)
+            {
+                var json = JsonConvert.SerializeObject(newParkingRequest);
+                var request = new StringContent(json, Encoding.UTF8, "application/json");
+                var token = Request.Cookies["AuthToken"];
+
+                if (token != null)
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                }
+                var response = await _httpClient.PostAsync("https://localhost:44331/parking/NewParking", request);
+                if (response.IsSuccessStatusCode)
+                {
+                   return RedirectToAction("Index");
+                }
+
+            }
+            TempData["message"] = "Ha ocurrido un error";
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

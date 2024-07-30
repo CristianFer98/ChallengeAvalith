@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MIMDP_APP.Models.Parking.Requests
+namespace MIMDP_APP.Models.Parking.Response
 {
     public class ParkingInfoResponse
     {

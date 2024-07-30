@@ -8,6 +8,7 @@ namespace ParkingService
     /// </summary>
     public interface IParkingService
     {
+        void AddParking(NewParkingRequest request);
         List<Auto> GetCarsByIdUser(int userId);
         List<Parking> GetParkingByPatentes(List<string> patentes);
         Usuario GetUser(ParkingInfoRequest request);

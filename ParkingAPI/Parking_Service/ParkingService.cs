@@ -10,6 +10,19 @@ namespace ParkingService
 {
     public class ParkingService : IParkingService
     {
+        public void AddParking(NewParkingRequest request)
+        {
+            try
+            {
+                ParkingRepository.ParkingRepository.AddParking(request);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public List<Auto> GetCarsByIdUser(int userId)
         {
             try

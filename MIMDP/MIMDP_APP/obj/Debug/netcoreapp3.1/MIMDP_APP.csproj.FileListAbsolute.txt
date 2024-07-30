@@ -249,6 +249,8 @@ C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Register.cshtml.g.cs
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Parking\Index.cshtml.g.cs
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Salud\Form.cshtml.g.cs
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Salud\Index.cshtml.g.cs
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Footer.cshtml.g.cs
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\MIMDP\MIMDP_APP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Header.cshtml.g.cs

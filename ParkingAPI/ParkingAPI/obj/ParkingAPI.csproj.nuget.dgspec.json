@@ -29,6 +29,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingModels\\ParkingModels.csproj": {
+                "projectPath": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingModels\\ParkingModels.csproj"
+              },
               "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingRepository\\ParkingRepository.csproj": {
                 "projectPath": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingRepository\\ParkingRepository.csproj"
               },

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ParkingModels
+namespace ParkingModels.Response
 {
     /// <summary>
     /// Es el modelo de respuesta a la solicitud de inforación inicial del parking

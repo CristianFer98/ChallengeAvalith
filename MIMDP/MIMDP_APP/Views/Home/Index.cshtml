@@ -41,32 +41,23 @@
                         Permite estacionar el auto, consultar saldos, ver movimientos,
                         cargar saldo virtual o pagar infracciones.
                     </p>
-                    <a asp-controller="Parking" asp-action="Index" class="btn btn-primary">Acceder</a>
+                    <a asp-controller="Parking" asp-action="Index" style="background-color:#3F495E" class="btn btn-primary">Acceder</a>
+                    @TempData["Message"]
                 </div>
             </div>
         </div>
         <div class="item">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Turnos Licencia de conducir</h5>
+                    <h5 class="card-title">Mi Salud</h5>
                     <p class="card-text">
-                        Permite solicitar un turno para solicitar una nueva licencia de conducir o su renovación.
+                        Getione sus turnos en cualquiera de los 39 centros del municipio
                     </p>
-                    <a href="#" class="btn btn-primary">Acceder</a>
+                    <a asp-controller="Salud" asp-action="Form" style="background-color:#3F495E"  class="btn btn-primary">Acceder</a>
                 </div>
             </div>
         </div>
-        <div class="item">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Ventanilla única de trámites</h5>
-                    <p class="card-text">
-                        Será redirigido al portal de AFIP
-                    </p>
-                    <a href="#" class="btn btn-primary">Acceder</a>
-                </div>
-            </div>
-        </div>
+
     </section>
 </div>
 

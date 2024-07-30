@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ParkingModels\ParkingModels.csproj" />
     <ProjectReference Include="..\ParkingRepository\ParkingRepository.csproj" />
     <ProjectReference Include="..\Parking_Service\ParkingService.csproj" />
   </ItemGroup>

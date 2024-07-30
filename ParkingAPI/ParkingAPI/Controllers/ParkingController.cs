@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ParkingModels;
+using ParkingModels.Response; 
 using ParkingService;
 using System.Collections.Generic;
 
@@ -48,6 +49,24 @@ namespace ParkingAPI.Controllers
             }
 
         }
+
+        [Authorize]
+        [Route("NewParking")]
+        public IActionResult NewParking([FromBody] NewParkingRequest request)
+        {
+            try
+            {
+                _parkingService.AddParking(request);
+                return Ok("Agregado con exito");
+            }
+            catch (System.Exception)
+            {
+
+                return BadRequest("Ha ingresado mal un dato");
+            }
+            
+        }
+
 
         private List<string> GetPatentes(List<Auto> autos)
         {

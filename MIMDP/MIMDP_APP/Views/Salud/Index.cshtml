@@ -1,0 +1,80 @@
+﻿@model MIMDP_APP.Models.Salud.SaludViewModel
+@{
+}
+<style>
+    .index {
+        display: flex;
+    }
+
+    .contenido {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container-custom {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<partial name="_Header" model='TempData["UserName"]'></partial>
+
+<div class="index">
+    <partial name="_Sidebar" />
+
+    <div class="contenido">
+        <div class="container-custom">
+            <form asp-action="SubmitForm" method="post">
+                <div class="form-group">
+                    <label asp-for="@Model.Turno.InstitucionSalud">Ingrese la institucion</label>
+                    <input asp-for="@Model.Turno.InstitucionSalud" type="text" class="form-control" required>
+                    <span asp-validation-for="@Model.Turno.InstitucionSalud" class="text-danger"></span>
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Turno.Especialidad">Ingrese especialidad</label>
+                    <input asp-for="@Model.Turno.Especialidad" type="text" class="form-control" required>
+                    <span asp-validation-for="@Model.Turno.Especialidad" class="text-danger"></span>
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Turno.Fecha">Dirección</label>
+                    <input asp-for="@Model.Turno.Fecha" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" class="form-control" required>
+                    <span asp-validation-for="@Model.Turno.Fecha" class="text-danger"></span>
+
+                </div>
+                <input type="hidden" asp-for="@Model.Turno.NumeroDeTramite" value="@Model.Turnos[0].NumeroDeTramite" />
+
+
+                <button asp-action="NuevoTurno" asp-controller="Salud" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <table class="table table-dark" style="width:100%">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Institucion Salud</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var turno in Model.Turnos)
+                {
+                    <tr>
+                        <th scope="row">@turno.Id</th>
+                        <td>@turno.InstitucionSalud</td>
+                        <td>@turno.Especialidad</td>
+                        <td>@turno.Fecha</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<partial name="_Footer"></partial>

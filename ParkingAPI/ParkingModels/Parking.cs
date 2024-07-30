@@ -9,6 +9,6 @@ namespace ParkingModels
         public int Id { get; set; }
         public string Direccion { get; set; }
         public string Patente { get; set; }
-        public decimal DuracionEnHoras { get; set; }
+        public int DuracionEnHoras { get; set; }
     }
 }

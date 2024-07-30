@@ -1,12 +1,275 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\models\\registerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\models\\registerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\models\\logindata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\salud\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\salud\\form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\salud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\salud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\parking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\parking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\UserData.cs",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Models\\UserData.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\UserData.cs",
+              "RelativeToolTip": "MIMDP_APP\\Models\\UserData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:41:28.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\TokenResponse.cs",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Models\\TokenResponse.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\TokenResponse.cs",
+              "RelativeToolTip": "MIMDP_APP\\Models\\TokenResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:41:28.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterData.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\RegisterData.cs",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Models\\RegisterData.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\RegisterData.cs",
+              "RelativeToolTip": "MIMDP_APP\\Models\\RegisterData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:41:28.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginData.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\LoginData.cs",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Models\\LoginData.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\LoginData.cs",
+              "RelativeToolTip": "MIMDP_APP\\Models\\LoginData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:41:27.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Models\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\JwtSettings.cs",
+              "RelativeToolTip": "MIMDP_APP\\Models\\JwtSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:41:27.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MIMDP_APP\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:41:27.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Salud\\Form.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Salud\\Form.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Salud\\Form.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Salud\\Form.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:37:02.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Salud\\Index.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Salud\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Salud\\Index.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Salud\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:36:37.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Parking\\Index.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Parking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Parking\\Index.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Parking\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:35:36.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:33:18.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:32:28.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Footer.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Shared\\_Footer.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Shared\\_Footer.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Shared\\_Footer.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Shared\\_Footer.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:31:40.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Sidebar.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Shared\\_Sidebar.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Shared\\_Sidebar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:27:12.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAB/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:20:19.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MIMDP_APP\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADcAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T14:20:07.393Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
