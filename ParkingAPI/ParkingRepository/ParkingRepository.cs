@@ -1,41 +1,81 @@
-﻿using ParkingModels;
+﻿using Microsoft.EntityFrameworkCore;
+using ParkingModels;
+using ParkingModels.Data;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ParkingRepository
 {
     /// <summary>
     /// Define una lista estatica que almacena los Parqueos y los devuelve, simulando una base de datos.
     /// </summary>
-    public class ParkingRepository
+    public class ParkingRepository : IParkingRepository
     {
+        private readonly ParkingContext _parkingContext;
 
-        private static readonly List<Parking> parkings = new List<Parking>
+        public ParkingRepository(ParkingContext parkingContext)
         {
-            new Parking { Id = 1, Patente = "ABC-123", Direccion = "Argentina 3393", DuracionEnHoras = 1,},
-            new Parking { Id = 2, Patente = "EFR-152", Direccion = "Indart 3562", DuracionEnHoras = 2},
-            new Parking { Id = 3, Patente = "MBN-856", Direccion = "America 25", DuracionEnHoras = 3 }
-        };
+            _parkingContext = parkingContext;
+        }   
 
-        public static void AddParking(NewParkingRequest request)
+        public List<Autos> GetCars(int userId)
         {
-            if (request != null)
+            try
             {
-                int Id = parkings.Count + 1;
-                Parking parking = new Parking()
-                {
-                    Id = Id,
-                    Patente = request.Patente,
-                    Direccion = request.Direccion,
-                    DuracionEnHoras = request.Duracion
-                };
-                parkings.Add(parking);
+                List<Autos> autos = _parkingContext.Autos.Where(a => a.IdUsuario == userId).ToList();
+                
+                return autos;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
-        public static List<Parking> ObtenerParkings()
+        public List<Parking> GetParkingsByUserId(int userId)
         {
-            return parkings;
+            try
+            {
+                List<Parking> parkings = _parkingContext.Parking.Where(p => p.IdUsuario == userId).Include(p => p.Auto).ToList();
+                return parkings;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public Usuario GetUser(string dni)
+        {
+            try
+            {
+                return _parkingContext.Usuario.Where(u => u.DNI == dni).SingleOrDefault();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void AddParking(NuevoParking request)
+        {
+            try
+            {
+                Parking parking = new Parking();
+                parking.IdAuto = request.IdAuto;
+                parking.IdUsuario = request.IdUsuario;
+                parking.Direccion = request.Direccion;
+                parking.DuracionEnHoras = request.Duracion;
+
+                _parkingContext.Parking.Add(parking);
+                _parkingContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

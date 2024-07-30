@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("MIMDP_APP")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3644d8b3daf0a06f20b793dbd267d560b0d35b1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23d9aae38a9bb707ae974f132debd216dd09bfcf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MIMDP_APP.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

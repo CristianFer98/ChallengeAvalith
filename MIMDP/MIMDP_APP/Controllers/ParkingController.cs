@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MIMDP_APP.Models.Parking;
 using MIMDP_APP.Models.Parking.Requests;
 using MIMDP_APP.Models.Parking.Response;
 using MIMDP_APP.Models.Parking.ViewModels;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Reflection.Metadata;
@@ -27,46 +30,87 @@ namespace MyAppMVC.Controllers
         [Authorize]
         public async Task<IActionResult> Index()
         {
-            ParkingInfoRequest parkingInfoRequest = new ParkingInfoRequest()
+            string DNI = User.Claims.FirstOrDefault(c => c.Type == "Dni")?.Value;
+
+            List<Autos> autos = await GetAutos(DNI);
+            List<Parking> parkings = await GetParkings(DNI);
+
+            ParkingIndexViewModel parkingIndexViewModel = new ParkingIndexViewModel();
+
+            parkingIndexViewModel.Parkings = parkings;
+            parkingIndexViewModel.Autos = autos;
+            parkingIndexViewModel.NuevoParking = new NuevoParking();
+            TempData["UserName"] = User.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
+
+            return View(parkingIndexViewModel);
+        }
+
+        private async Task<List<Parking>> GetParkings(string DNI)
+        {
+            try
             {
-                Dni = User.Claims.FirstOrDefault(c => c.Type == "Dni")?.Value,
-                UserId = Convert.ToInt32(User.Claims.FirstOrDefault(c => c.Type == "Id")?.Value)
-            };
+                var json = JsonConvert.SerializeObject(DNI);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var token = Request.Cookies["AuthToken"];
 
-            var json = JsonConvert.SerializeObject(parkingInfoRequest);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+                if (token != null)
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                }
+                var response = await _httpClient.PostAsync("https://localhost:44331/parking/parkings", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    List<Parking> parkings = JsonConvert.DeserializeObject<List<Parking>>(jsonString);
 
-            var token = Request.Cookies["AuthToken"];
-
-            if (token != null)
-            {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                    return parkings;
+                }
+                return new List<Parking>();
             }
-
-            var response = await _httpClient.PostAsync("https://localhost:44331/parking/info", content);
-
-            if (response.IsSuccessStatusCode)
+            catch (Exception)
             {
-                var jsonString = await response.Content.ReadAsStringAsync();
-                var parkingInfo = JsonConvert.DeserializeObject<ParkingInfoResponse>(jsonString);
-                ParkingInfoViewModel parkingInfoViewModel = new ParkingInfoViewModel();
-                parkingInfoViewModel.ParkingInfoResponse = parkingInfo;
-                parkingInfoViewModel.NewParkingRequest = new NewParkingRequest();
-
-                TempData["UserName"] = User.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
-
-                return View(parkingInfoViewModel);
+                return new List<Parking>();
             }
-            TempData["Message"] = "El usuario no tiene cuenta en el portal";
-            return RedirectToAction("Index", "Home");
+        }
+
+        private async Task<List<Autos>> GetAutos(string DNI)
+        {
+            try
+            {
+                var json = JsonConvert.SerializeObject(DNI);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var token = Request.Cookies["AuthToken"];
+
+                if (token != null)
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                }
+
+                var response = await _httpClient.PostAsync("https://localhost:44331/parking/autos", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    List<Autos> autos = JsonConvert.DeserializeObject<List<Autos>>(jsonString);
+
+                    return autos;
+                }
+                return new List<Autos>();
+            }
+            catch (Exception)
+            {
+                return new List<Autos>();
+            }
         }
 
         [Authorize]
-        public async Task<IActionResult> NewParking(NewParkingRequest newParkingRequest)
+        public async Task<IActionResult> NuevoParking(NuevoParking nuevoParking)
         {
             if (ModelState.IsValid)
             {
-                var json = JsonConvert.SerializeObject(newParkingRequest);
+                nuevoParking.IdUsuario = Convert.ToInt32(User.Claims.FirstOrDefault(c => c.Type == "Id")?.Value);
+
+                var json = JsonConvert.SerializeObject(nuevoParking);
                 var request = new StringContent(json, Encoding.UTF8, "application/json");
                 var token = Request.Cookies["AuthToken"];
 
@@ -74,10 +118,10 @@ namespace MyAppMVC.Controllers
                 {
                     _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 }
-                var response = await _httpClient.PostAsync("https://localhost:44331/parking/NewParking", request);
+                var response = await _httpClient.PostAsync("https://localhost:44331/parking/nuevo", request);
                 if (response.IsSuccessStatusCode)
                 {
-                   return RedirectToAction("Index");
+                    return RedirectToAction("Index");
                 }
 
             }

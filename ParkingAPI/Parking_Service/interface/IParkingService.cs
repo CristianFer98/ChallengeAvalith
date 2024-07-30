@@ -1,4 +1,5 @@
 ﻿using ParkingModels;
+using ParkingModels.Data;
 using System.Collections.Generic;
 
 namespace ParkingService
@@ -8,9 +9,9 @@ namespace ParkingService
     /// </summary>
     public interface IParkingService
     {
-        void AddParking(NewParkingRequest request);
-        List<Auto> GetCarsByIdUser(int userId);
-        List<Parking> GetParkingByPatentes(List<string> patentes);
-        Usuario GetUser(ParkingInfoRequest request);
+        void AddParking(NuevoParking request);
+        List<Autos> GetCarsByIdUser(int userId);
+        List<Parking> GetParkingByIdUser(int userId);
+        Usuario GetUser(string dni);
     }
 }

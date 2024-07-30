@@ -3,10 +3,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MIMDP_APP.Models.Parking.Requests
 {
-    public class NewParkingRequest
+    public class NuevoParking
     {
-        [Required]
-        [MaxLength(10)]
+
+        public int IdAuto { get; set; }
+
+        public int IdUsuario { get; set; }
+
         public string Patente { get; set; }
 
         [Required]

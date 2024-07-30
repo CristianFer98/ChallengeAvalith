@@ -1,9 +1,3 @@
-C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.csproj.AssemblyReference.cache
-C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.AssemblyInfoInputs.cache
-C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.AssemblyInfo.cs
-C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.csproj.CoreCompileInputs.cache
-C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\ParkingAPI.exe
@@ -12,6 +6,7 @@ C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netc
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\ParkingAPI.runtimeconfig.dev.json
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\ParkingAPI.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\ParkingAPI.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -19,6 +14,7 @@ C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netc
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -64,6 +60,12 @@ C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netc
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\ParkingModels.pdb
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\ParkingRepository.pdb
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\bin\Debug\netcoreapp3.1\ParkingService.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.csproj.AssemblyReference.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.AssemblyInfoInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.AssemblyInfo.cs
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.csproj.CoreCompileInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\ParkingAPI.RazorTargetAssemblyInfo.cache
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\staticwebassets\ParkingAPI.StaticWebAssets.Manifest.cache
 C:\Users\AVALITH1\Desktop\Trabajo\Challenge\ParkingAPI\ParkingAPI\obj\Debug\netcoreapp3.1\staticwebassets\ParkingAPI.StaticWebAssets.Pack.cache

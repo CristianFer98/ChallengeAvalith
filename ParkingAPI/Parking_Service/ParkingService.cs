@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using ParkingModels;
+using ParkingModels.Data;
 using ParkingRepository;
 using System;
 using System.Collections.Generic;
@@ -10,24 +11,29 @@ namespace ParkingService
 {
     public class ParkingService : IParkingService
     {
-        public void AddParking(NewParkingRequest request)
+        private readonly IParkingRepository _parkingRepository;
+
+        public ParkingService(IParkingRepository parkingRepository)
+        {
+                _parkingRepository = parkingRepository;
+        }
+        public void AddParking(NuevoParking request)
         {
             try
             {
-                ParkingRepository.ParkingRepository.AddParking(request);
+                _parkingRepository.AddParking(request);
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
 
-        public List<Auto> GetCarsByIdUser(int userId)
+        public List<Autos> GetCarsByIdUser(int userId)
         {
             try
             {
-                return AutosRepository.ObtenerAutos().Where(u => u.IdUsuario == userId).ToList();
+                return _parkingRepository.GetCars(userId);
             }
             catch (Exception ex)
             {
@@ -35,11 +41,11 @@ namespace ParkingService
             }
         }
 
-        public List<Parking> GetParkingByPatentes(List<string> patentes)
+        public List<Parking> GetParkingByIdUser(int id)
         {
             try
             {
-                return ParkingRepository.ParkingRepository.ObtenerParkings().Where(e => patentes.Contains(e.Patente)).ToList();
+                return _parkingRepository.GetParkingsByUserId(id);
             }
             catch (Exception ex)
             {
@@ -47,11 +53,11 @@ namespace ParkingService
             }
         }
 
-        public Usuario GetUser(ParkingInfoRequest request)
+        public Usuario GetUser(string dni)
         {
             try
             {
-                return UsuariosRepository.ObtenerClientes().Where(u => u.Dni == request.Dni && u.Id == request.UserId).SingleOrDefault();
+                return _parkingRepository.GetUser(dni);
             }
             catch (Exception ex)
             {

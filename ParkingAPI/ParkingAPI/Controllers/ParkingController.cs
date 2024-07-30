@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using ParkingModels;
-using ParkingModels.Response; 
+using ParkingModels.Data;
 using ParkingService;
 using System.Collections.Generic;
 
@@ -20,22 +21,19 @@ namespace ParkingAPI.Controllers
         }
 
         [Authorize]
-        [Route("Info")]
-        public IActionResult GetInformation([FromBody] ParkingInfoRequest request)
+        [Route("autos")]
+        public IActionResult GetCars([FromBody] string Dni)
         {
-            ParkingInfoResponse parkingInfoResponse = new ParkingInfoResponse();
-
+            List<Autos> autos = new List<Autos>();
             try
             {
-                Usuario usuario = _parkingService.GetUser(request);
+                Usuario usuario = _parkingService.GetUser(Dni);
 
                 if (usuario != null)
                 {
-                    parkingInfoResponse.Autos = _parkingService.GetCarsByIdUser(request.UserId);
-                    List<string> patentes = GetPatentes(parkingInfoResponse.Autos);
-                    parkingInfoResponse.Parking = _parkingService.GetParkingByPatentes(patentes);
-
-                    return Ok(parkingInfoResponse);
+                    autos = _parkingService.GetCarsByIdUser(usuario.Id);
+                    
+                    return Ok(autos);
                 }
                 else
                 {
@@ -51,8 +49,35 @@ namespace ParkingAPI.Controllers
         }
 
         [Authorize]
-        [Route("NewParking")]
-        public IActionResult NewParking([FromBody] NewParkingRequest request)
+        [Route("parkings")]
+        public IActionResult GetParkings([FromBody] string Dni)
+        {
+            List<Parking> parkings = new List<Parking>();
+            try
+            {
+                Usuario usuario = _parkingService.GetUser(Dni);
+
+                if (usuario != null)
+                {
+                    parkings = _parkingService.GetParkingByIdUser(usuario.Id);
+                    return Ok(parkings);
+                }
+                else
+                {
+                    return NotFound("El usuario no existe, favor de crear una cuenta");
+                }
+
+            }
+            catch (System.Exception)
+            {
+                return NotFound("Ha ocurrido un error interno");
+            }
+
+        }
+
+        [Authorize]
+        [Route("nuevo")]
+        public IActionResult NuevoParking([FromBody] NuevoParking request)
         {
             try
             {
@@ -61,22 +86,12 @@ namespace ParkingAPI.Controllers
             }
             catch (System.Exception)
             {
-
                 return BadRequest("Ha ingresado mal un dato");
             }
-            
+
         }
 
 
-        private List<string> GetPatentes(List<Auto> autos)
-        {
-            List<string> patentes = new List<string>();
-
-            foreach (var auto in autos)
-            {
-                patentes.Add(auto.Patente);
-            }
-            return patentes;
-        }
+      
     }
 }

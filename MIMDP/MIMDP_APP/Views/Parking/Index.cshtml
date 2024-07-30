@@ -1,4 +1,4 @@
-﻿@model MIMDP_APP.Models.Parking.ViewModels.ParkingInfoViewModel;
+﻿@model MIMDP_APP.Models.Parking.ViewModels.ParkingIndexViewModel;
 @{
 }
 <style>
@@ -28,26 +28,27 @@
     <div class="contenido">
         <div class="container-custom">
             <form asp-action="SubmitForm" method="post">
+
                 <div class="form-group">
-                    <label asp-for="NewParkingRequest.Patente">Número de la Patente</label>
-                    <select asp-for="NewParkingRequest.Patente" class="form-control" asp-items="@(new SelectList(Model.ParkingInfoResponse.Autos, "Patente", "Patente"))">
+                    <label asp-for="NuevoParking.IdAuto">Número de la Patente</label>
+                    <select asp-for="NuevoParking.IdAuto" class="form-control" asp-items="@(new SelectList(Model.Autos, "Id", "Patente"))">
                         <option value="">Seleccione una de sus patentes</option>
                     </select>
-                    <span asp-validation-for="NewParkingRequest.Patente" class="text-danger"></span>
+                    <span asp-validation-for="NuevoParking.IdAuto" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="NewParkingRequest.Duracion">Duracion (En Horas)</label>
-                    <input asp-for="NewParkingRequest.Duracion" type="number" class="form-control" required>
-                    <span asp-validation-for="NewParkingRequest.Duracion" class="text-danger"></span>
+                    <label asp-for="NuevoParking.Duracion">Duracion (En Horas)</label>
+                    <input asp-for="NuevoParking.Duracion" type="number" class="form-control" required>
+                    <span asp-validation-for="NuevoParking.Duracion" class="text-danger"></span>
 
                 </div>
                 <div class="form-group">
-                    <label asp-for="NewParkingRequest.Direccion">Dirección</label>
-                    <input asp-for="NewParkingRequest.Direccion" type="text" class="form-control" required>
-                    <span asp-validation-for="NewParkingRequest.Direccion" class="text-danger"></span>
+                    <label asp-for="NuevoParking.Direccion">Dirección</label>
+                    <input asp-for="NuevoParking.Direccion" type="text" class="form-control" required>
+                    <span asp-validation-for="NuevoParking.Direccion" class="text-danger"></span>
 
                 </div>
-                <button asp-action="NewParking" asp-controller="Parking" type="submit" class="btn btn-primary">Submit</button>
+                <button asp-action="NuevoParking" asp-controller="Parking" type="submit" style="background-color:#3F495E" class="btn btn-primary">Estacionar</button>
             </form>
         </div>
 
@@ -56,16 +57,18 @@
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Patente</th>
+                    <th scope="col">Modelo</th>
                     <th scope="col">Direccion</th>
-                    <th scope="col">Duración</th>
+                    <th scope="col">Duración (Hs)</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var parking in Model.ParkingInfoResponse.Parking)
+                @foreach (var parking in Model.Parkings)
                 {
                     <tr>
                         <th scope="row">@parking.Id</th>
-                        <td>@parking.Patente</td>
+                        <td>@parking.Auto.Patente</td>
+                        <td>@parking.Auto.Modelo</td>
                         <td>@parking.Direccion</td>
                         <td>@parking.DuracionEnHoras</td>
                     </tr>

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using ParkingModels.Data;
+using System.Collections.Generic;
 
 namespace ParkingModels.Response
 {
@@ -7,7 +8,7 @@ namespace ParkingModels.Response
     /// </summary>
     public class ParkingInfoResponse
     {
-        public List<Auto> Autos { get; set; }
+        public List<Autos> Autos { get; set; }
         public List<Parking> Parking { get; set; }
 
     }

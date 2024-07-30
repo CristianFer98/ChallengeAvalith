@@ -1,6 +1,6 @@
 ﻿namespace MIMDP_APP.Models.Parking
 {
-    public class Auto
+    public class Autos
     {
         public int Id { get; set; }
         public int IdUsuario { get; set; }
