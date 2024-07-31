@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\SaludAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{049CB07E-CB5C-47BC-9F3B-B1D944E6B4C5}|SaludAPI\\SaludAPI.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\saludapi\\saludapi\\controllers\\saludcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049CB07E-CB5C-47BC-9F3B-B1D944E6B4C5}|SaludAPI\\SaludAPI.csproj|solutionrelative:saludapi\\controllers\\saludcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32AF4542-020E-485F-B1BF-6F5DD3AF1FE4}|SaludRepository\\SaludRepository.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\saludapi\\saludrepository\\saludrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32AF4542-020E-485F-B1BF-6F5DD3AF1FE4}|SaludRepository\\SaludRepository.csproj|solutionrelative:saludrepository\\saludrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6150CA1B-81C5-48A1-874E-870718254BDD}|SaludService\\SaludService.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\saludapi\\saludservice\\saludservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6150CA1B-81C5-48A1-874E-870718254BDD}|SaludService\\SaludService.csproj|solutionrelative:saludservice\\saludservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SaludRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\SaludAPI\\SaludRepository\\SaludRepository.cs",
+              "RelativeDocumentMoniker": "SaludRepository\\SaludRepository.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\SaludAPI\\SaludRepository\\SaludRepository.cs",
+              "RelativeToolTip": "SaludRepository\\SaludRepository.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAcwEYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T20:01:47.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SaludService.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\SaludAPI\\SaludService\\SaludService.cs",
+              "RelativeDocumentMoniker": "SaludService\\SaludService.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\SaludAPI\\SaludService\\SaludService.cs",
+              "RelativeToolTip": "SaludService\\SaludService.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwDwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T20:00:59.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaludController.cs",
+              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\SaludAPI\\SaludAPI\\Controllers\\SaludController.cs",
+              "RelativeDocumentMoniker": "SaludAPI\\Controllers\\SaludController.cs",
+              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\SaludAPI\\SaludAPI\\Controllers\\SaludController.cs",
+              "RelativeToolTip": "SaludAPI\\Controllers\\SaludController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAkwD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T19:55:40.677Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -14,7 +14,7 @@ namespace MIMDP_APP.Models.Salud.ViewModels
 
         public string NumeroDeTramite {get;set;}
 
-        public int UserId { get; set; }
+        public Usuario Usuario { get; set; }
 
     }
 }

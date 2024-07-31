@@ -63,6 +63,11 @@ namespace SaludRepository
                                                u.Dni == accesRequest.DNI).SingleOrDefault();
         }
 
+        public Usuario GetUsuarioByNumeroDeTramite(string numeroDeTramite)
+        {
+            return _saludContext.Usuario.Where(u => u.NumeroDeTramite == numeroDeTramite).SingleOrDefault();
+        }
+
         public void NuevoTurno(Turnos turno)
         {
             try

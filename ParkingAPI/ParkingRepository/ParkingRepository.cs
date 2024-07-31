@@ -17,14 +17,14 @@ namespace ParkingRepository
         public ParkingRepository(ParkingContext parkingContext)
         {
             _parkingContext = parkingContext;
-        }   
+        }
 
         public List<Autos> GetCars(int userId)
         {
             try
             {
                 List<Autos> autos = _parkingContext.Autos.Where(a => a.IdUsuario == userId).ToList();
-                
+
                 return autos;
             }
             catch (Exception ex)
@@ -62,14 +62,29 @@ namespace ParkingRepository
         {
             try
             {
+                int idUser = GetUserByAutoId(request.IdAuto);
+
                 Parking parking = new Parking();
                 parking.IdAuto = request.IdAuto;
-                parking.IdUsuario = request.IdUsuario;
+                parking.IdUsuario = idUser;
                 parking.Direccion = request.Direccion;
                 parking.DuracionEnHoras = request.Duracion;
 
                 _parkingContext.Parking.Add(parking);
                 _parkingContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private int GetUserByAutoId(int idAuto)
+        {
+            try
+            {
+                Autos auto = _parkingContext.Autos.Where(a => a.Id == idAuto).SingleOrDefault();
+                return auto.IdUsuario;
             }
             catch (Exception)
             {

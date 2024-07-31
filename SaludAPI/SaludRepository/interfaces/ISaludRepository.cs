@@ -12,6 +12,7 @@ namespace SaludRepository.interfaces
         List<Especialidad> GetEspecialidades();
         List<Turnos> GetTurnosByUserId(int id);
         Usuario GetUserById(AccesRequest accesRequest);
+        Usuario GetUsuarioByNumeroDeTramite(string numeroDeTramite);
         void NuevoTurno(Turnos turno);
     }
 }

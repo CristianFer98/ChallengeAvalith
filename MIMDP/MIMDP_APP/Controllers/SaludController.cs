@@ -95,6 +95,7 @@ namespace MIMDP_APP.Controllers
                 List<CentroDeSalud> centroDeSalud = GetCentrosDeSalud();
                 List<Turnos> turnos = GetTurnos(accesRequest);
                 List<Especialidad> especialidades = GetEspecialidades();
+                Usuario usuario = GetUsuario(accesRequest.NumeroDeTramite);
 
                 if (turnos == null)
                 {
@@ -107,6 +108,7 @@ namespace MIMDP_APP.Controllers
                 saludIndexViewModel.CentrosDeSalud = centroDeSalud;
                 saludIndexViewModel.Espacialidades = especialidades;
                 saludIndexViewModel.Turno = new Turnos();
+                saludIndexViewModel.Usuario = usuario;
 
 
                 return saludIndexViewModel;
@@ -184,7 +186,7 @@ namespace MIMDP_APP.Controllers
                 {
                     _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 }
-                var response = _httpClient.PostAsync("https://localhost:44341/Salud/Turnos", content).GetAwaiter().GetResult(); ;
+                var response = _httpClient.PostAsync("https://localhost:44341/Salud/Turnos", content).GetAwaiter().GetResult();
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -201,16 +203,45 @@ namespace MIMDP_APP.Controllers
             }
         }
 
+        private Usuario GetUsuario(string NumeroDeTramite)
+        {
+            try
+            {
+                var json = JsonConvert.SerializeObject(NumeroDeTramite);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var token = Request.Cookies["AuthToken"];
+
+                if (token != null)
+                {
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                }
+                var response = _httpClient.PostAsync("https://localhost:44341/Salud/Usuario", content).GetAwaiter().GetResult();
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonString = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                    Usuario usuario = JsonConvert.DeserializeObject<Usuario>(jsonString);
+
+                    return usuario;
+                }
+                return null;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> NuevoTurno(SaludIndexViewModel saludViewModel)
         {
-            string numeroDeTramite = saludViewModel.NumeroDeTramite;
+            string numeroDeTramite = saludViewModel.Usuario.NumeroDeTramite;
 
             if (ModelState.IsValid)
             {
                 Turnos turno = saludViewModel.Turno;
-                turno.IdUsuario = saludViewModel.UserId;
+                turno.IdUsuario = saludViewModel.Usuario.Id;
 
                 var json = JsonConvert.SerializeObject(turno);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");

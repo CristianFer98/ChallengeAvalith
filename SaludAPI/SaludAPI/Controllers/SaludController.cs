@@ -53,6 +53,21 @@ namespace SaludAPI.Controllers
             }
         }
 
+        [Authorize]
+        [HttpPost("Usuario")]
+        public IActionResult GetUsuario([FromBody] string numeroDeTramite)
+        {
+            try
+            {
+                Usuario usuario = _saludService.GetUsuarioByNumeroDeTramite(numeroDeTramite);
+                return Ok(usuario);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Ha ocurrido un error");
+            }
+        }
+
 
         [Authorize]
         [HttpPost("Turnos")]
@@ -70,7 +85,7 @@ namespace SaludAPI.Controllers
 
                 if (usuarioEsperado != null)
                 {
-                    List<Turnos> listaFiltrada = _saludService.GetTurnosByUserId(usuarioEsperado.Id);
+                    List<Turnos> listaFiltrada = _saludService.GetTurnosByUserId(usuarioEsperado.Id);                   
                     return Ok(listaFiltrada);
                 }
                 else

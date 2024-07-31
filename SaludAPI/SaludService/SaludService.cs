@@ -56,6 +56,11 @@ namespace SaludService
             return _saludRepository.GetUserById(accesRequest);
         }
 
+        public Usuario GetUsuarioByNumeroDeTramite(string numeroDeTramite)
+        {
+            return _saludRepository.GetUsuarioByNumeroDeTramite(numeroDeTramite);
+        }
+
         public void NuevoTurno(Turnos turno)
         {
             try
