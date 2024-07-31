@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SaludAPI.Models;
+using SaludModels;
+using SaludModels.Data;
+using SaludService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,47 +16,81 @@ namespace SaludAPI.Controllers
     [Route("[controller]")]
     public class SaludController : ControllerBase
     {
+        private readonly ISaludService _saludService;
 
-        public static List<Turno> turnos = new List<Turno>()
+        public SaludController(ISaludService saludService)
         {
-            new Turno() { Id = 1, InstitucionSalud = "Centro Salud Favaloro", NumeroDeTramite = "123456", Fecha = new DateTime(2024, 7, 25, 14, 30, 0), Especialidad = "CARDIOLOGIA"},
-            new Turno() { Id = 2, InstitucionSalud = "Centro Salud Favaloro", NumeroDeTramite =  "123456", Fecha = new DateTime(2024, 7, 25, 14, 30, 0), Especialidad = "NEUROLOGIA"},
-            new Turno() { Id = 3, InstitucionSalud = "Centro OSDE", NumeroDeTramite = "654321", Fecha = new DateTime(2024, 7, 25, 14, 30, 0), Especialidad = "PEDIATRIA"},
-            new Turno() { Id = 4, InstitucionSalud = "Centro PAMI", NumeroDeTramite = "654321", Fecha = new DateTime(2024, 7, 25, 14, 30, 0), Especialidad = "DERMATOLOGIA"},
-            new Turno() { Id = 5, InstitucionSalud = "Hospital Militar", NumeroDeTramite = "999999", Fecha = new DateTime(2024, 7, 25, 14, 30, 0), Especialidad = "ODONTOLOGIA"}
-        };
+            _saludService = saludService;
+        }
 
         [Authorize]
-        [HttpPost("Info")]
-        public IActionResult Info([FromBody] string NumeroDeTramite)
+        [HttpGet("CentrosSalud")]
+        public IActionResult GetCentroDeSalud()
         {
             try
             {
-                if (String.IsNullOrEmpty(NumeroDeTramite))
-                {
-                    return BadRequest("El número de trámite no puede estar vacío.");
-                }
-
-                var listaFiltrada = turnos.Where(t => t.NumeroDeTramite == NumeroDeTramite).ToList();
+                List<CentroDeSalud> listaFiltrada = _saludService.GetCentrosDeSalud();
                 return Ok(listaFiltrada);
-
             }
             catch (Exception)
             {
                 return BadRequest("Ha ocurrido un error");
             }
+        }
 
+        [Authorize]
+        [HttpGet("Especialidades")]
+        public IActionResult GetEspecialidades()
+        {
+            try
+            {
+                List<Especialidad> listaFiltrada = _saludService.GetEspecialidades();
+                return Ok(listaFiltrada);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Ha ocurrido un error");
+            }
+        }
+
+
+        [Authorize]
+        [HttpPost("Turnos")]
+        public IActionResult GetTurnos([FromBody] AccesRequest accesRequest)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(accesRequest.NumeroDeTramite))
+                {
+                    return BadRequest("El número de trámite no puede estar vacío.");
+                }
+
+                //Viaja el DNI y el numero de tramite. Deben concordar. 
+                Usuario usuarioEsperado = _saludService.GetUserById(accesRequest);
+
+                if (usuarioEsperado != null)
+                {
+                    List<Turnos> listaFiltrada = _saludService.GetTurnosByUserId(usuarioEsperado.Id);
+                    return Ok(listaFiltrada);
+                }
+                else
+                {
+                    return NotFound("El Numero de Tramite no concuerda con el usuario logueado");
+                }
+            }
+            catch (Exception)
+            {
+                return BadRequest("Ha ocurrido un error");
+            }
         }
 
         [Authorize]
         [HttpPost("NuevoTurno")]
-        public IActionResult NuevoTurno([FromBody] Turno turno)
+        public IActionResult NuevoTurno([FromBody] Turnos turno)
         {
             try
             {
-                int Id = turnos.Count() + 1;
-                turno.Id = Id;
-                turnos.Add(turno);
+                _saludService.NuevoTurno(turno);
                 return Ok();
             }
             catch (Exception)

@@ -21,7 +21,7 @@ namespace ParkingAPI.Controllers
         }
 
         [Authorize]
-        [Route("autos")]
+        [Route("Autos")]
         public IActionResult GetCars([FromBody] string Dni)
         {
             List<Autos> autos = new List<Autos>();

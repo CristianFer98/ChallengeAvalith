@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaludAPI", "SaludAPI\SaludAPI.csproj", "{049CB07E-CB5C-47BC-9F3B-B1D944E6B4C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaludAPI", "SaludAPI\SaludAPI.csproj", "{049CB07E-CB5C-47BC-9F3B-B1D944E6B4C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaludRepository", "SaludRepository\SaludRepository.csproj", "{32AF4542-020E-485F-B1BF-6F5DD3AF1FE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaludModels", "SaludModels\SaludModels.csproj", "{1F708F10-F2BC-4F86-B81A-1B47399FB46C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaludService", "SaludService\SaludService.csproj", "{6150CA1B-81C5-48A1-874E-870718254BDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{049CB07E-CB5C-47BC-9F3B-B1D944E6B4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{049CB07E-CB5C-47BC-9F3B-B1D944E6B4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{049CB07E-CB5C-47BC-9F3B-B1D944E6B4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AF4542-020E-485F-B1BF-6F5DD3AF1FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AF4542-020E-485F-B1BF-6F5DD3AF1FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AF4542-020E-485F-B1BF-6F5DD3AF1FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AF4542-020E-485F-B1BF-6F5DD3AF1FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F708F10-F2BC-4F86-B81A-1B47399FB46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F708F10-F2BC-4F86-B81A-1B47399FB46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F708F10-F2BC-4F86-B81A-1B47399FB46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F708F10-F2BC-4F86-B81A-1B47399FB46C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6150CA1B-81C5-48A1-874E-870718254BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6150CA1B-81C5-48A1-874E-870718254BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6150CA1B-81C5-48A1-874E-870718254BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6150CA1B-81C5-48A1-874E-870718254BDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

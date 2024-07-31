@@ -1,0 +1,16 @@
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\bin\Debug\netcoreapp3.1\SaludRepository.deps.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\bin\Debug\netcoreapp3.1\SaludRepository.runtimeconfig.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\bin\Debug\netcoreapp3.1\SaludRepository.runtimeconfig.dev.json
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\bin\Debug\netcoreapp3.1\SaludRepository.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\bin\Debug\netcoreapp3.1\SaludRepository.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\bin\Debug\netcoreapp3.1\SaludModels.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\bin\Debug\netcoreapp3.1\SaludModels.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.csproj.AssemblyReference.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.AssemblyInfoInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.AssemblyInfo.cs
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.csproj.CoreCompileInputs.cache
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRep.CA523685.Up2Date
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.dll
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.pdb
+C:\Users\AVALITH1\Desktop\Trabajo\Challenge\SaludAPI\SaludRepository\obj\Debug\netcoreapp3.1\SaludRepository.genruntimeconfig.cache

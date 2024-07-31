@@ -1,4 +1,4 @@
-﻿@model MIMDP_APP.Models.Salud.SaludViewModel
+﻿@model MIMDP_APP.Models.Salud.ViewModels.SaludIndexViewModel
 @{
 }
 <style>
@@ -29,27 +29,34 @@
         <div class="container-custom">
             <form asp-action="SubmitForm" method="post">
                 <div class="form-group">
-                    <label asp-for="@Model.Turno.InstitucionSalud">Ingrese la institucion</label>
-                    <input asp-for="@Model.Turno.InstitucionSalud" type="text" class="form-control" required>
-                    <span asp-validation-for="@Model.Turno.InstitucionSalud" class="text-danger"></span>
-
+                    <label asp-for="@Model.Turno.IdCentroDeSalud">Centro de salud</label>
+                    <select asp-for="@Model.Turno.IdCentroDeSalud" class="form-control" asp-items="@(new SelectList(@Model.CentrosDeSalud, "Id", "Nombre"))">
+                        <option value="">Seleccione el centro de salud</option>
+                    </select>
+                    <span asp-validation-for="@Model.Turno.IdCentroDeSalud" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="@Model.Turno.Especialidad">Ingrese especialidad</label>
-                    <input asp-for="@Model.Turno.Especialidad" type="text" class="form-control" required>
-                    <span asp-validation-for="@Model.Turno.Especialidad" class="text-danger"></span>
-
+                    <label asp-for="@Model.Turno.IdEspecialidad">Especialidad</label>
+                    <select asp-for="@Model.Turno.IdEspecialidad" class="form-control" asp-items="@(new SelectList(@Model.Espacialidades, "Id", "Nombre"))">
+                        <option value="">Seleccione la especialidad</option>
+                    </select>
+                    <span asp-validation-for="@Model.Turno.IdEspecialidad" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="@Model.Turno.Fecha">Dirección</label>
-                    <input asp-for="@Model.Turno.Fecha" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" class="form-control" required>
-                    <span asp-validation-for="@Model.Turno.Fecha" class="text-danger"></span>
+                    <label asp-for="@Model.Turno.Horario">Dia</label>
+                    <input asp-for="@Model.Turno.Horario" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" class="form-control" required>
+                    <span class="text-danger">
+                        <p>@ViewBag.Message</p>
+                    </span>
 
                 </div>
-                <input type="hidden" asp-for="@Model.Turno.NumeroDeTramite" value="@Model.Turnos[0].NumeroDeTramite" />
 
+                <input asp-for="@Model.NumeroDeTramite" value="@Model.Turnos[0].IdUsuarioNavigation.NumeroDeTramite" type="hidden" />
+                <input asp-for="@Model.UserId" value="@Model.Turnos[0].IdUsuarioNavigation.Id" type="hidden" />
 
-                <button asp-action="NuevoTurno" asp-controller="Salud" type="submit" class="btn btn-primary">Submit</button>
+                
+
+                <button asp-action="NuevoTurno" asp-controller="Salud" type="submit" style="background-color:#3F495E" class="btn btn-primary">Generar turno</button>
             </form>
         </div>
 
@@ -67,9 +74,9 @@
                 {
                     <tr>
                         <th scope="row">@turno.Id</th>
-                        <td>@turno.InstitucionSalud</td>
-                        <td>@turno.Especialidad</td>
-                        <td>@turno.Fecha</td>
+                        <td>@turno.IdCentroDeSaludNavigation.Nombre</td>
+                        <td>@turno.IdEspecialidadNavigation.Nombre</td>
+                        <td>@turno.Horario</td>
                     </tr>
                 }
             </tbody>
@@ -78,3 +85,9 @@
 </div>
 
 <partial name="_Footer"></partial>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

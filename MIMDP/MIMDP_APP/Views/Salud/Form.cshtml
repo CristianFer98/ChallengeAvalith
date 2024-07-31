@@ -1,6 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model MIMDP_APP.Models.Salud.request.AccesRequest
 @{
 }
 
@@ -30,13 +28,14 @@
 
     <div class="contenido">
         <div class="container-custom">
-            <form asp-action="SubmitForm" method="get">
+            <form asp-action="SubmitForm" method="post">
                 
                 <div class="form-group">
-                    <label for="NumeroDeTramitename" name="NumeroDeTramite">Proporcione el numero de tramite del DNI</label>
-                    <input name="NumeroDeTramite" type="text" class="form-control" required>
+                    <label asp-for="NumeroDeTramite" name="NumeroDeTramite">Proporcione el numero de tramite del DNI</label>
+                    <input asp-for="NumeroDeTramite" name="NumeroDeTramite" type="text" class="form-control">
+                    <span asp-validation-for="NumeroDeTramite" class="text-danger"></span>
                 </div>
-                <button asp-action="Index" asp-controller="Salud" type="submit" class="btn btn-primary">Submit</button>
+                <button asp-action="Index" asp-controller="Salud" style="background-color:#3F495E" type="submit" class="btn btn-primary">Ingresar</button>
                 @ViewBag.Message
             </form>
         </div>
@@ -46,3 +45,9 @@
 </div>
 
 <partial name="_Footer"></partial>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

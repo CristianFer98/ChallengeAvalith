@@ -1,6 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
-using ParkingModels;
+﻿using ParkingModels;
 using ParkingModels.Data;
 using ParkingRepository;
 using System;
