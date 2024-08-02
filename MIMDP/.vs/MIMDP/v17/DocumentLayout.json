@@ -1,88 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\controllers\\saludcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\controllers\\saludcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\controllers\\parkingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\controllers\\parkingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\views\\salud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\views\\salud\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\mimdp\\mimdp_app\\models\\salud\\viewmodels\\saludindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{772B5051-9294-4796-8701-FE720079863D}|MIMDP_APP\\MIMDP_APP.csproj|solutionrelative:mimdp_app\\models\\salud\\viewmodels\\saludindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SaludIndexViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\Salud\\ViewModels\\SaludIndexViewModel.cs",
-              "RelativeDocumentMoniker": "MIMDP_APP\\Models\\Salud\\ViewModels\\SaludIndexViewModel.cs",
-              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Models\\Salud\\ViewModels\\SaludIndexViewModel.cs",
-              "RelativeToolTip": "MIMDP_APP\\Models\\Salud\\ViewModels\\SaludIndexViewModel.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T20:14:12.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Salud\\Index.cshtml",
-              "RelativeDocumentMoniker": "MIMDP_APP\\Views\\Salud\\Index.cshtml",
-              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Views\\Salud\\Index.cshtml",
-              "RelativeToolTip": "MIMDP_APP\\Views\\Salud\\Index.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-31T18:27:22.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SaludController.cs",
-              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Controllers\\SaludController.cs",
-              "RelativeDocumentMoniker": "MIMDP_APP\\Controllers\\SaludController.cs",
-              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Controllers\\SaludController.cs",
-              "RelativeToolTip": "MIMDP_APP\\Controllers\\SaludController.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAjwGMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:52:56.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ParkingController.cs",
-              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Controllers\\ParkingController.cs",
-              "RelativeDocumentMoniker": "MIMDP_APP\\Controllers\\ParkingController.cs",
-              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\MIMDP\\MIMDP_APP\\Controllers\\ParkingController.cs",
-              "RelativeToolTip": "MIMDP_APP\\Controllers\\ParkingController.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAADgv2wAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T18:42:08.768Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

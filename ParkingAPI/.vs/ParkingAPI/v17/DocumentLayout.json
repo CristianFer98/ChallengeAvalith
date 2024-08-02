@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BEE617A2-FF24-4E5E-A73B-C58C02FF17DC}|ParkingAPI\\ParkingAPI.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\parkingapi\\parkingapi\\controllers\\parkingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEE617A2-FF24-4E5E-A73B-C58C02FF17DC}|ParkingAPI\\ParkingAPI.csproj|solutionrelative:parkingapi\\controllers\\parkingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F11BAF7-013A-4817-B2BB-C2F5493B5DE8}|ParkingRepository\\ParkingRepository.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\parkingapi\\parkingrepository\\parkingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F11BAF7-013A-4817-B2BB-C2F5493B5DE8}|ParkingRepository\\ParkingRepository.csproj|solutionrelative:parkingrepository\\parkingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E388FD2-D228-4219-8E85-377DD68CC3EA}|Parking_Service\\ParkingService.csproj|c:\\users\\avalith1\\desktop\\trabajo\\challenge\\parkingapi\\parking_service\\parkingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E388FD2-D228-4219-8E85-377DD68CC3EA}|Parking_Service\\ParkingService.csproj|solutionrelative:parking_service\\parkingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ParkingService.cs",
-              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\Parking_Service\\ParkingService.cs",
-              "RelativeDocumentMoniker": "Parking_Service\\ParkingService.cs",
-              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\Parking_Service\\ParkingService.cs",
-              "RelativeToolTip": "Parking_Service\\ParkingService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T19:37:57.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ParkingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingRepository\\ParkingRepository.cs",
-              "RelativeDocumentMoniker": "ParkingRepository\\ParkingRepository.cs",
-              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingRepository\\ParkingRepository.cs",
-              "RelativeToolTip": "ParkingRepository\\ParkingRepository.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAYwEoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T18:42:43.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ParkingController.cs",
-              "DocumentMoniker": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingAPI\\Controllers\\ParkingController.cs",
-              "RelativeDocumentMoniker": "ParkingAPI\\Controllers\\ParkingController.cs",
-              "ToolTip": "C:\\Users\\AVALITH1\\Desktop\\Trabajo\\Challenge\\ParkingAPI\\ParkingAPI\\Controllers\\ParkingController.cs",
-              "RelativeToolTip": "ParkingAPI\\Controllers\\ParkingController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAowFMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T18:40:36.128Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
